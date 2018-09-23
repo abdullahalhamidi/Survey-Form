@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Abdullah Al Hamidi</a> <button class="navbar-toggler" data-target="#navbar-Menu" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbar-Menu">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<p>Let us know how we can improve freeCodeCamp</p>
+		<form>
+			<div class="form-row justify-content-center">
+				<label class="col-sm-1 col-form-label" for="name" id="name-label">Name:</label>
+				<div class="col-sm-4">
+					<input class="form-control" id="name" placeholder="Enter your Name" type="name">
+				</div>
+			</div>
+			<div class="form-row justify-content-center">
+				<label class="col-sm-1 col-form-label" for="email" id="email-label">Email:</label>
+				<div class="col-sm-4">
+					<input class="form-control" id="email" placeholder="Enter your email" type="email">
+				</div>
+			</div>
+			<div class="form-row justify-content-center">
+				<label class="col-sm-1 col-form-label" for="number" id="number-label">Age:</label>
+				<div class="col-sm-4">
+					<input class="form-control" id="number" placeholder="Enter your age" type="text">
+				</div>
+			</div>
+			<div class="col-auto">
+				<label class="col-sm-7 col-form-label" for="dropdown" id="dropdown">Which option best describes your current role?</label> <select class="custom-select col-sm-4" id="dropdown">
+					<option value="student">
+						Student
+					</option>
+					<option value="full-time-job">
+						Full Time Job
+					</option>
+					<option value="full-time-learner">
+						Full Time Learner
+					</option>
+					<option value="pfts">
+						Prefer not to say
+					</option>
+					<option value="other">
+						Other
+					</option>
+				</select>
+			</div>
+			<fieldset class="col-auto form-group">
+				<div class="col-auto row">
+					<legend class="col-form-label col-sm-7">How likely is that you would recommend freeCodeCamp to a friend?</legend>
+					<div class="col-sm-4">
+						<div class="form-check">
+							<input class="form-check-input" id="def" type="radio"> <label class="form-check-label" for="def">Definitely</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" id="may" type="radio"> <label class="form-check-label" for="may">Maybe</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" id="not" type="radio"> <label class="form-check-label" for="not">Not sure</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<div class="col-auto">
+				<label class="col-sm-7 col-form-label" for="dropdown" id="dropdown">What do you like most in Free Code Camp?</label> <select class="custom-select col-sm-4" id="dropdown">
+					<option value="Challenges">
+						Challenges
+					</option>
+					<option value="Projects">
+						Projects
+					</option>
+					<option value="Community">
+						Community
+					</option>
+				</select>
+			</div>
+			<fieldset class="col-auto form-group">
+				<div class="col-auto row">
+					<legend class="col-form-label col-sm-7">Things that should be improved in the future (Check all that apply):</legend>
+					<div class="col-sm-4">
+						<div class="form-check">
+							<input class="form-check-input" id="def" type="checkbox"> <label class="form-check-label" for="def">Front-end Projects</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" id="def" type="checkbox"> <label class="form-check-label" for="def">Back-end Projects</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" id="def" type="checkbox"> <label class="form-check-label" for="def">Data Visualization</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-row justify-content-center">
+				<label class="col-sm-2 col-form-label" for="exampleFormControlTextarea1" id="comment-label">Comment:</label>
+				<div class="col-sm-6">
+					<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your comment" rows="3"></textarea>
+				</div>
+			</div><button class="btn col-sm-12 btn-success" type="button">Submit</button>
+		</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+</body>
+</html>
